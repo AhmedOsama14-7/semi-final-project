@@ -872,11 +872,11 @@ h1{
 }
 
 .page7{
-    width: 100vw;
+    width: 98.5vw;
     background: url(../assets/images/Rectangle\ 45.png);
     height: 26.5rem;
     margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: center;
     
@@ -905,6 +905,64 @@ h1{
     
     flex-wrap: wrap;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    width: 30%;
+    font-size: 1.2rem;
+
+}
+
+.footer-logo p{
+    opacity: .6;
+    font-size: 1.2rem;
+}
+.footer-logo img{
+    width: 30%;
+}
+
+.footer-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.footer-menu h3{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.footer-social ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-social h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-social img{
+ width: 1.5rem;
+ height: 1.5rem;
+ 
+}
+.copy-right{
+    text-align: center;
+    font-weight: 500;
+    opacity: .8;
+}
+
 @media (min-width:2201px) {
     *{
         font-size: 22px ;
@@ -1359,6 +1417,6 @@ h1{
     }
 
     .page7{
-        width: 110vw;
+        width: 100vw;
     }
 }
