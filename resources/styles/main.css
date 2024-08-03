@@ -625,6 +625,42 @@ h1{
     font-weight: 700;
 }
 
+.page5-header-button{
+    cursor: pointer;
+    border: 1px solid rgba(114, 114, 114, 0.932);
+    border-radius:1rem ;
+    width: 12rem;
+    height: 2.5rem;
+    position: relative;
+    border-collapse: collapse;
+} 
+.page5-header-button button:nth-child(1){
+  border: none;
+  background-color: #fff;
+  color: black;
+  height: 100%;
+  padding-inline: 1rem;
+  cursor: pointer;
+  
+  
+} 
+.page5-header-button button:nth-child(2){
+    border: none;
+    border-left: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius:1rem ;
+    height: 100%;
+    width: 50%;
+    padding-inline: 1rem;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    
+} 
+
+
+
 .prices-container{
     display: flex;
     justify-content:center;
@@ -632,7 +668,7 @@ h1{
 }
 .prices-box{
     width: calc((100% - 4rem) / 3);
-    height: 520px;
+    height: fit-content;
     border: 2px solid black;
     border-radius: 10px;
     transition: .5s;
@@ -677,6 +713,9 @@ h1{
 }
 .prices-box li{
     padding-top: 1rem;
+    list-style: url(../assets/images/Group\ 46.png);
+    padding-left: 1rem;
+    padding-top:1rem ;
 }
 .prices-box button{
     width: 90%;
@@ -684,10 +723,12 @@ h1{
     background-color: black;
     margin-inline-start: 5%;
     font-size: 20px;
+    font-weight: 700;
     height: 2.5rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .prices-box:hover{
@@ -698,6 +739,171 @@ h1{
 .prices-box:hover button{
     background-color: white;
     color: #1F1F1F;
+}
+.page6{
+    margin-top: 3rem;
+}
+.review-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.review-header-h{
+   padding-left: 2rem;
+}
+.review-header-h h4{
+    font-size: 1.5rem;
+    letter-spacing: 1%;
+    opacity: 0.3;
+}
+.review-header-h h2{
+    font-size: 4rem;
+    font-weight: bold;
+    fill: black;
+    text-transform: capitalize;
+}
+.review-header-button{
+    margin-top: 2rem;
+}
+.review-header-button button {
+    margin-bottom: 0;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    height: 3.75rem;
+    width: 11.625rem;
+    text-transform: capitalize;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.review-header-button button:hover{
+    background-color: #fff;
+    color: black;
+}
+.review-body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.review-img{
+    padding-left: 2rem;
+    width: 35%;
+}
+.review-img img{
+    width: 100%;
+}
+.review-container{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+.review-box-container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+.review-box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    height: fit-content;
+    border-radius: 2rem;
+}
+.review-box .box-header{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.review-box .box-header img{
+    width: 45px;
+    height: 20px;
+    padding-right: .5rem;
+    transform: translateY(-10px);
+}
+.review-box .box-header h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-left: 1rem;
+}
+.box-stars{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.box-para{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 1rem;
+    opacity: 0.8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.review-slider-button{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.review-slider-button button:nth-child(1){
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.review-slider-button button:nth-child(2){
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.page7{
+    width: 100vw;
+    background: url(../assets/images/Rectangle\ 45.png);
+    height: 26.5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.contact{
+    text-align: center;
+    color: white;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.contact h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: .87;
+}
+.contact h2{
+    font-size: 4rem;
+    font-weight: bold;
+    fill: #fff;
+}
+.contact  p{
+   text-align: center;
+    
+    flex-wrap: wrap;
 }
 @media (min-width:2201px) {
     *{
@@ -988,10 +1194,21 @@ h1{
     .prices-box{
         
     }
-    .page5-header{
+    .page5 .page5-header{
         margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
-    
+    .page5-header-button{
+        
+    }
+    .page5-header-button button:nth-child(1){
+        padding-inline-end: 5rem;
+    }
+    .page7{
+        width: 100vw;
+    }
 }
 
 @media (max-width:610px) {
@@ -1076,22 +1293,72 @@ h1{
         width: 50%;
     }
 
+    .page4-img-container img:nth-child(1){
+        display: none;
+    }
+    .page4-img-container img:nth-child(2){
+        text-align: center;
+        width: 100%;
+        padding-left: 4rem;
+    }
+    .page5{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
     .prices-container{
         width: 70%;
-        margin-left: 6rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        
     }
 
-    .page5-header{
-        margin-left: 4rem;
+   
+
+    .page5 .page5-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem;
+    }
+    .page5-header-button{
+        justify-content: center;
+        width: 100%;
+
+    }
+    .page5-header-button button:nth-child(1){
+        padding-inline-end: 10rem;
+    }
+    .review-header{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .review-img{
+        display: none;
+
+    }
+    .review-container{
+        width: 100%;
+    }
+    .review-box-container{
+        padding-inline: 1rem;
     }
 
-    .page5-header{
-        margin-left: 4rem;
+    .review-slider-button{
+        width: 100%;
+        justify-content: center;    
     }
-    .prices-box{
-        margin-left: 4rem;
-    }
-    .prices-box:nth-child(1){
-        margin-left: 4rem;
+
+    .page7{
+        width: 110vw;
     }
 }
