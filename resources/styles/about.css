@@ -54,13 +54,7 @@ nav ul li:hover {
 .dropdown-menu {
   display: none;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 100%;
-}
+
 .hero-banner {
   text-align: center;
   width: 100%;
@@ -187,10 +181,10 @@ main {
 
 .trainers-container {
   width: 100%;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .trainers-box {
   width: 370px;
@@ -404,13 +398,14 @@ main {
 }
 
 .footer-contact {
-  width: 98.5vw;
+  width: 100%;
   background: url(../assets/images/Rectangle\ 45.png);
   height: 26.5rem;
   margin-top: 7rem;
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  
 }
 .contact {
   text-align: center;
@@ -486,4 +481,123 @@ main {
   text-align: center;
   font-weight: 500;
   opacity: 0.8;
+}
+
+
+@media (max-width:1024px) {
+  *{
+    font-size: 15px;
+  }
+  .statics{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+    
+  }
+  .statics-container{
+    width: calc((100% - 17rem) / 2);
+  }
+  .statics-container:nth-child(1){
+    margin-left: 0rem;
+  }
+  .statics-container:nth-child(4){
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  *{
+    font-size: 14px;
+  }
+  nav ul{
+    display: none;
+  }  
+  .dropdown-menu{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: block;
+  }
+  
+  .statics{
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .qualifications{
+      flex-direction: column;
+      align-content: center;
+    }
+    .qualifications-child{
+      width: 100%;
+    }
+    .review-header {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .review-header-h {
+      padding-left: 0rem;
+      text-align: center;
+    }
+    .review-header-button button {
+      margin-right: 0rem;
+    }
+  
+    .review-img {
+      display: none;
+    }
+    .review-container {
+      width: 100%;
+    }
+    .review-box-container {
+      padding-inline: 1rem;
+    }
+  
+    .review-slider-button {
+      width: 100%;
+      justify-content: center;
+    }
+    .footer{
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .footer-logo{
+      display: none;
+    }
+}
+@media (max-width: 465px) {
+  *{
+    font-size: 13px;
+  }
+  
+  .hero-banner p{
+    width: 100%;
+    padding-inline: 3rem;
+  }
+  
+  .footer-contact .contact{
+    padding-top: 4rem;
+  }
+
+  .statics{
+    justify-content: flex-start;
+  }
+  .statics-container{
+    width: fit-content;
+  }
+  nav{
+    padding-inline: 0rem;
+
+  }
+  .contact{
+    gap: 1.5rem;
+  }
+  .contact h2{
+    font-size: 3rem;
+  }
 }

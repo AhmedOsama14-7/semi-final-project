@@ -15,7 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
   height: 50px;
   width: 100%;
   position: relative;
@@ -1203,7 +1203,15 @@ h1 {
   .video-button {
     padding-inline-start: 0.5rem;
   }
-
+  .page5-header-button{
+    padding-inline: 0rem;
+  }
+  .contact{
+    gap: 1rem;
+  }
+  .contact h2{
+    font-size: 3rem;
+  }
   .dropdown-menu {
     width: 30px;
     height: 30px;
