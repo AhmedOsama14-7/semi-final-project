@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+body{
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+
+/* Start nav bar */
+header {
+  width: 97vw;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  padding-inline: 2rem;
+}
+.logo {
+  align-items: center;
+  object-fit: cover;
+  width: 7rem;
+  height: 3.125rem;
+}
+ul {
+  display: flex;
+  justify-items: space-between;
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.active {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size:1rem ;
+}
+
+nav ul li:hover {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+  
+  
+  .join-button {
+    background-color: black;
+    color: #fff;
+    padding: 0.875rem 1.5rem;
+    border-radius: 1rem;
+    align-items: center;
+    stroke: center black;
+    width: 7.5rem;
+    height: 3.125rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .join-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 4rem;
+}
+
+.title{
+    text-align: center;
+display: flex;
+flex-flow: column wrap;
+  }
+  
+  h1{
+     font-size: 2.5rem;
+     font-weight: 700;
+ }
+ .title p{
+  color: #717171;
+  font-weight: 600;
+ }
+  .contact-banner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+    margin-inline: 3rem;
+    border: 1px solid #ffffff;
+    width: 90vw;
+    height: 45rem;
+}
+
+.information{
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    color: #fff;
+    border-radius: 1rem;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    width:40%;
+    height: 40rem;
+    position: relative;
+    margin-inline: 1rem;
+    overflow: hidden;
+}
+.information .body{
+    display: flex;
+    gap: 2rem;
+    padding-top: 8rem;
+}
+
+.information h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.information p{
+  font-size: 1.125rem;
+  color : #C9C9C9;
+  font-weight:400;
+}
+.information .body ul{
+    display: block;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3rem;
+}
+
+.information .body li {
+    list-style: none;
+    display: flex;
+
+    gap: 1rem;
+    
+
+}
+.icons{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+
+}
+.icons img{
+    background-color:white  ;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 2rem;
+    
+}
+.circle1{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color:#1a1a1a;
+  position: absolute;
+  bottom: -10rem;
+  right: -10rem;
+}
+.circle2{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color:#484848;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  opacity: 50%;
+}
+.contact-form{
+  width: 50%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 2rem;
+  gap: 5rem;
+  
+ 
+}
+.input{
+  border: none;
+  border-bottom: 2px solid black;
+  width:17rem;
+  padding-bottom: .4rem;
+}
+
+
+
+.input:focus{
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+.row3{
+gap: 1rem;
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+flex-wrap: wrap;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: calc((100% - 2rem) / 2);
+}
+.col input{
+  width: 100%;
+}
+
+.row4{
+  display: flex;
+  flex-flow: column wrap;
+}
+#message{
+  width: 100%;
+}
+.row5{
+ justify-content: end;
+  
+}
+
+.row5 button{
+ color: white;
+ background-color: black;
+ cursor: pointer;
+}
+
+#send{
+  width:13rem;
+  height: 3rem;
+  border-radius: .5rem;
+}
+#radio{
+  cursor: pointer;
+ accent-color:#717171;
+  
+}
+.footer-contact {
+  width: 100vw;
+  background: url(../assets/images/Rectangle\ 45.png);
+  height: 26.5rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  text-align: center;
+  color: white;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contact h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.87;
+}
+.contact h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  fill: #fff;
+}
+.contact p {
+  text-align: center;
+
+  flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+.footer-logo p {
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+.footer-logo img {
+  width: 30%;
+}
+
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-menu h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer-social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-social h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer-social img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.copy-right {
+  text-align: center;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+ @media (min-width:2500px) {
+  *{
+    font-size: 24px;
+  }
+  .row1 input{
+    width: 100%;
+  }
+  .row2 input{
+    width: 100%;
+  }
+  .row{
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+  .col{
+    width: 50%;
+  }
+}
+@media (min-width:2240px) {
+  *{
+    font-size: 22px;
+  }
+}
+@media (min-width:1600px) {
+  *{
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width:1440px) {
+  *{
+    font-size: 18px;
+  }
+} 
+@media (max-width:1110px) {
+  *{
+    font-size: 16px;
+  }
+  .contact-form{
+    height: fit-content;
+  }
+  form{
+    margin-top: 2rem;
+    gap: 2rem;
+    padding-left: -1rem;
+    padding-right: 1rem;
+  }
+  .circle1{
+    display: none;
+  }
+  .circle2{
+    display: none;
+  }
+  .row3{
+    flex-direction: column;
+  }
+}  
+
+ @media (max-width:768px) {
+  *{
+    font-size: 14px;
+  }
+
+  .join-button{
+    display: none;
+  }
+  .dropdown-menu{
+    display: block;
+    background: #1a1a1a;
+    width: 2rem;
+    height: 2rem;
+  }
+  nav ul{
+    display: none;
+  }
+
+  .contact-banner{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    
+ 
+  }
+
+  .information{
+    height:40rem;
+    width: 90%;
+    align-content: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .icons{
+    left: auto;
+    margin-top: 3rem;
+  }
+
+  .information .body ul li{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .information .body ul li img {
+    height: 20px;
+    width: 20px;
+  }
+  .contact-form{
+    width: 90%;
+  }
+  form{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .body{
+    justify-content: center;
+  }
+}
+@media (max-width:425px) {
+  *{
+
+    font-size: 12px;
+  }
+  html{
+    overflow-x: hidden;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 70%;
+  }
+  .col input{
+    width: 100%;
+  }
+  .hero-banner{
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-inline-start: -1rem;
+  }
+  .row5{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:375px) {
+  *{
+    font-size: 10px;
+  }
+}
+@media (max-width:320px) {
+  *{
+    font-size: 8px;
+  }
+}
+@media (max-width:280px) {
+  *{
+    font-size: 6px;
+  }
+}
+
+

@@ -1318,6 +1318,11 @@ h1 {
     justify-content: center;
     text-align: center;
     margin: 1rem;
+    padding: 0rem 0rem;
+  }
+
+  .page4-img-container img:nth-child(2){
+    display: none;
   }
   .page5-header-button {
     justify-content: center;
@@ -1365,28 +1370,14 @@ h1 {
   .page5-header-button {
     width: 80%;
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .footer .footer-logo {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
 
-  .footer .footer-menu ul {
-    display: flex;
-    gap: 2rem;
-    flex-direction: row;
-    padding-left: 3rem;
-  }
-  .footer .footer-social ul {
-    display: flex;
-    gap: 2rem;
-    flex-direction: row;
-    padding-left: 3rem;
-  }
 }
+
+@media (max-width:375px) {
+  *{
+    font-size: 10px;
+  }
+  
+}
+
+
