@@ -8,7 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fit Hub</title>
 </head>
 <body>
@@ -50,7 +53,36 @@
                 </form>
             </div>
 
-            <div class="dropdown-menu"></div>
+            <div class="dropdown-menu">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <div class="dropdown-menu-body">
+                    <div class="dropdown-menu-clicked">
+                        <ul class="dropdown-menu-links">
+                            <a href="index.html">
+                                <li class="active" >Home</li>
+                               
+                            </a>
+                            
+                            <a href="">
+                                <li>Plans</li>
+                             
+                            </a>
+                            <a href="">
+                                <li>Shop</li>
+                              
+                            </a>
+                            <a href="contact.html">
+        
+                                <li >Contact Us</li>
+                            </a>
+                            <a href="about.html">
+                                <li>About Us</li>
+                            </a>
+                            <li><button class="drop-down-join-button">Join Now</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -88,6 +120,7 @@
     
     
 
+         
          <div class="page1-info">
 
             <div class="info-container">
@@ -111,12 +144,13 @@
     
         </section>
         
-        <section class="page2">
+        <section class="page2"  data-aos="fade-up" data-aos-duration="1000">
+          
             <div class="about">
                 <h2 class="h2-about">Why choose us</h2>
                 <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse optio perferendis obcaecati laudantium delectus facilis amet placeat molestias doloremque.</p>
             </div>
-
+            
         <div class="hero-banner">
             <div class="about-container">
                 
@@ -148,10 +182,12 @@
             </div>
             </div>
         </div>
+        
         </section>
 
-        <section class="page3">
-            <div class="trainers-head">
+        <section class="page3"  data-aos="fade-up" data-aos-duration="1000">
+            
+            <div class="trainers-head" >
                 <h2> Meet our trainers</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique officia dolorem quibusdam tenetur.</p>
             </div>
@@ -160,9 +196,11 @@
                 <div class="trainers-box">  <div class="layer"><h3>Name</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem rerum amet itaque aspernatur perspiciatis. Quis dolorum nisi ab sapiente.</div>  </div>
                 <div class="trainers-box">  <div class="layer"><h3>Name</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem rerum amet itaque aspernatur perspiciatis. Quis dolorum nisi ab sapiente.</div>  </div>
             </div> 
+            </div>
         </section>
 
-        <section class="page4">
+        <section class="page4"  data-aos="fade-up" data-aos-duration="1000">
+            
             <div class="page4-img-container">
                 <img src="./resources/assets/images/Rectangle 34.png">
                 <img src="./resources/assets/images/Rectangle 35.png">
@@ -175,9 +213,11 @@
                     <button class="explore-more">explore more</button>
                 </form>
             </div>
+            </div>
         </section>
 
-        <section class="page5">
+        <section class="page5"  data-aos="fade-up" data-aos-duration="1000">
+            </div>
             <div class="page5-header">
                 <div class="page5-header-h">
                 <h4>pricing plan</h4>
@@ -239,8 +279,10 @@
                     <button>choose plan</button>
                 </div>
             </div>
+        </div>
         </section>
-        <section class="page6">
+        <section class="page6"  data-aos="fade-up" data-aos-duration="1000">
+            
             <div class="review-header">
                 <div class="review-header-h">
                     <h4>give review</h4>
@@ -287,13 +329,16 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
-        <section class="page7">
+        <section class="page7"  data-aos="fade-up" data-aos-duration="1000">
+            
             <div class="contact">
                 <h3>call us today</h3>
                 <h2>+20 1024217294</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum recusandae vitae incidunt quia fuga inventore dicta mollitia assumenda, perferendis veritatis?</p>
+            </div>
             </div>
         </section>
         <footer>
@@ -346,5 +391,10 @@
             <div class="copy-right">hamodaoss209@gmail.com</div>
         </footer>
     </main>
+    <script src="./resources/scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

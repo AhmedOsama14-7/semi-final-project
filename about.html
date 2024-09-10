@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/styles/about.css">
     <link rel="icon" href="./assets/images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fit Hub | about</title>
 </head>
 <body>
@@ -42,7 +44,36 @@
                 </ul>
             </div>
 
-                   <div class="dropdown-menu"></div>
+                   <div class="dropdown-menu">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                    <div class="dropdown-menu-body">
+                        <div class="dropdown-menu-clicked">
+                            <ul class="dropdown-menu-links">
+                                <a href="index.html">
+                                    <li >Home</li>
+                                   
+                                </a>
+                                
+                                <a href="">
+                                    <li>Plans</li>
+                                 
+                                </a>
+                                <a href="">
+                                    <li>Shop</li>
+                                  
+                                </a>
+                                <a href="contact.html">
+            
+                                    <li >Contact Us</li>
+                                </a>
+                                <a href="about.html">
+                                    <li class="active">About Us</li>
+                                </a>
+                                <li><button class="drop-down-join-button">Join Now</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
         </nav>
     </header>
     <main>
@@ -52,7 +83,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum fuga omnis magni! Quis accusantium, est voluptatum cupiditate nihil aspernatur aliquid quae sed quo, at odit, reiciendis magnam minus esse harum!</p>
         </section>
          
-        <section class="statics">
+        <section class="statics"  >
             <div class="statics-container">
                 <h3 class="h-statics h-statics1">500+</h3>
                 <p class="p-statics p-statics1"> <span class="word-specefication"> Happy members</span> our comunity is growing fast</p>
@@ -73,7 +104,7 @@
         </section>
 
 
-        <section class="qualifications-parent">
+        <section class="qualifications-parent" data-aos="fade-up" data-aos-duration="1000">
         <div class="qualifications">
             
             <div class="qualifications-child">
@@ -96,7 +127,7 @@
         </section>
         
 
-        <section class="footer-contact">
+        <section class="footer-contact" data-aos="fade-up" data-aos-duration="1000">
             <div class="contact">
                 <h3>call us today</h3>
                 <h2>+20 1024217294</h2>
@@ -155,5 +186,11 @@
         
 
     </main>
+
+    <script src="./resources/scripts/about.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
