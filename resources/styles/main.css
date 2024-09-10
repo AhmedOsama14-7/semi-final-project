@@ -74,15 +74,18 @@ nav ul li:hover {
 .dropdown-menu {
   display: none;
 }
-
+body{
+  overflow-x: hidden;
+}
 
   .dropdown-menu-clicked{
     background-color: #1a1a1a;
     display: none;
     position: absolute;
-    width: 100vw;
+    width: 110vw;
+    overflow-x: hidden;
     top: 55px;
-    right: 0rem;
+    right: -8vw;
     z-index: 5;
     overflow-x: hidden;
     display: none;
