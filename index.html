@@ -219,7 +219,7 @@
         <section class="page5"  data-aos="fade-up" data-aos-duration="1000">
             </div>
             <div class="page5-header">
-                <div class="page5-header-h">
+                <div class="page5-header-h" id="pricing-box">
                 <h4>pricing plan</h4>
                 <h2>join today</h2>
             </div>
@@ -244,7 +244,7 @@
                             <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
-                    <button class="planBtn">choose plan</button>
+                    <a href="#pricing-box"><button class="planBtn" >choose plan</button></a>
                 </div>
                 <div class="prices-box">
                     <div class="prices-box-header">
@@ -260,7 +260,7 @@
                             <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
-                    <button class="planBtn">choose plan</button>
+                    <a href="#pricing-box"><button class="planBtn" >choose plan</button></a>
                 </div>
                 <div class="prices-box">
                     <div class="prices-box-header">
@@ -276,22 +276,44 @@
                             <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
-                    <button class="planBtn">choose plan</button>
+                    <a href="#pricing-box"><button class="planBtn" >choose plan</button></a>
                 </div>
             </div>
         </div>
-
-        <div class="pricing-box">
+<div class="pricing-box-container" >
+        <div class="pricing-box not-active-plan"  >
             <div class="pricing-box-head">
                 <div class="joinUs">
                     <i class="fa-solid fa-dumbbell"></i>
                     <h3>Join Us Now!</h3>
                 </div>
                 <div>
-                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="close"><i class="fa-solid fa-xmark closeBtn"></i></button>
                 </div>
-                <div class="range">
 
+            </div>
+                <div class="range">
+                    <div class="num-container">
+                        <div class="num num-active"><h3>1</h3></div>
+                        
+                        <p>Basic Details</p>
+                    </div>
+                    
+                    <div class="num-container">
+                        <div class="num">
+                            <h3>2</h3>
+                        </div>
+                        
+                        <p>Membership Details</p>
+                    </div>
+                    
+                    
+                    <div class="num-container">
+                        <div class="num"><h3>3</h3></div>
+                        
+                        <p>Payment</p>
+                    </div>
+                    
                 </div>
                 <div class="pricing-box-body">
                     <div class="header">
@@ -305,31 +327,125 @@
                         </div>
                         <div class="img-holder">
                             <div class="img-holder-content">
-                                <i class=""></i>
+                                <i class="fa-solid fa-folder"></i>
                                 <h5>Drop your files here !</h5>
-                                <input type="file">
+                                <!-- <input type="file"> -->
                             </div>
                         </div>
                     </div>
 
-                    <div class="footer">
+                    <div class="price-box-footer">
                         <div class="upper-footer">
-                        <button class="gender">Select Gender</button>
-                        <div class="gender-box">
-                            <button class="male">Male</button>
-                            <button class="female">Female</button>
+                        <input type="button" class="gender footer-inputs" value="Select Gender">
+                        
+                        <input type="text" placeholder="Enter Age" class="footer-inputs bottom-inputs">
+                        <input type="text" placeholder="Enter height" class="footer-inputs  bottom-inputs">
+                        <input type="text"  placeholder="Enter wight" class="footer-inputs  bottom-inputs">
                         </div>
-                        <input type="text" placeholder="Enter Age" class="footer-inputs">
-                        <input type="text" placeholder="Enter height" class="footer-inputs">
-                        <input type="text"  placeholder="Enter wight" class="footer-inputs">
+                        <div class="gender-box">
+                            <input type="button" class="male genderBtn"  value="Male">
+                            <input type="button" class="female genderBtn"  value="Female">
                         </div>
                         <div class="footer-btn">
+                            <div class="row-button-alert row"><h3 class="not-active-alert">Please Fill The Form !</h3></div>
                             <button class="next">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        
+    </div>
+
+
+
+
+
+    <div class="pricing-box-container pricing-box-container2 not-active" >
+        <div class="pricing-box pricing-box2"  >
+            <div class="pricing-box-head">
+                <div class="joinUs">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h3>Join Us Now!</h3>
+                </div>
+                <div>
+                    <button class="close"><i class="fa-solid fa-xmark closeBtn2"></i></button>
+                </div>
+
+            </div>
+                <div class="range">
+                    <div class="num-container">
+                        <div class="num "><h3>1</h3></div>
+                        
+                        <p>Basic Details</p>
+                    </div>
+                    
+                    <div class="num-container">
+                        <div class="num num-active">
+                            <h3>2</h3>
+                        </div>
+                        
+                        <p>Membership Details</p>
+                    </div>
+                    
+                    
+                    <div class="num-container">
+                        <div class="num"><h3>3</h3></div>
+                        
+                        <p>Payment</p>
+                    </div>
+                    
+                </div>
+                <div class="pricing-box-body">
+                    <div class="header">
+                        <h4>Membership Details!</h4>
+                    </div>
+                    <div class="body body2">
+                        <div class="row1 row">
+                            <input type="button"   value="Select Plan" class="btn" name="" id="plan">
+                            <input type="text"  placeholder="Month" class="inputs month" name="" id="month">
+                           
+                        </div>
+                        <div class="row2 row not-active">
+                            <input type="button"   value="Begginer Plan" class="planChoice" name="" id="plan">
+                            <input type="button"   value="Premuim Plan" class="planChoice" name="" id="plan">
+                            <input type="button"   value="Expert Plan" class="planChoice" name="" id="plan">
+                        </div>
+                        <div class="row3 row">
+                            <input type="text" placeholder="Plan Duaration" class="inputs" >
+                            <input type="text" placeholder="End Date"class="inputs">
+                            <input type="text" placeholder="Start Date" class="inputs">
+                        </div>
+                        <div class="row-alert row"><h3 class="not-active-alert">Note : Every Goal Cost 3000EGP</h3></div>
+                        <div class="row4 row">
+                            <input type="button" class="goalBtn"value="goal1">
+                            <input type="button" class="goalBtn"value="goal2">
+                            <input type="button" class="goalBtn" value="goal3">
+                            <input type="button"class="goalBtn"  value="goal4">
+                            <input type="button" class="goalBtn" value="goal5">
+                            <input type="button" class="goalBtn" value="goal6">
+                            <input type="button" class="goalBtn" value="goal7">
+                            <input type="button" class="goalBtn" value="goal8">
+                           
+                        </div>
+
+                
+                    
+                    </div>
+
+
+                        <div class="footer-btn">
+                            <div class="row-button-alert2 row"><h3 class="not-active-alert">Please Fill The Form !</h3></div>
+                            <button class="next2 next">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
         </section>
         <section class="page6"  data-aos="fade-up" data-aos-duration="1000">
             
