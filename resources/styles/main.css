@@ -8,6 +8,7 @@
 }
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Start nav bar */
@@ -458,44 +459,47 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+  gap: 2rem;
 }
 .trainers-box {
-  width: 370px;
-  height: 450px;
+  width:23.5rem;
+  height: 34rem;
   overflow: hidden;
   margin-top: 3rem;
   position: relative;
+ 
 }
 .trainers-box:nth-child(1) {
   margin-left: 2rem;
-  background: url(../assets/images/Group\ 38.png);
+  background: url(../assets/images/Rectangle37.png);
+  background-size: cover;
 
   background-repeat: no-repeat;
 }
 .trainers-box:nth-child(2) {
-  background: url(../assets/images/Rectangle\ 39.png);
-
+  background: url(../assets/images/Rectangle38.png);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .trainers-box:nth-child(3) {
-  background: url(../assets/images/Group\ 40.png);
+  background: url(../assets/images/Rectangle39.png);
   margin-right: 2rem;
-
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .layer {
   position: absolute;
-
-  bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
   padding: 0rem 2rem;
   border-radius: 30px;
-  width: 90%;
-  height: 90%;
-  transform: translateX(0.75rem);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
 }
 
@@ -777,7 +781,9 @@ h1 {
    position: absolute;
   z-index: 2;
   top: 15%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  
+
   
 }
 .pricing-box-head{
@@ -1105,10 +1111,39 @@ h1 {
 .review-header-h {
   padding-left: 2rem;
 }
+.closeBtn4{
+  width: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  padding-block: 1rem;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.body3{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20rem;
+}
+
+.head{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.head h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
 .review-header-h h4 {
   font-size: 1.5rem;
   letter-spacing: 1%;
   opacity: 0.3;
+}
+.closeBtn3{
+  cursor: pointer;
 }
 .review-header-h h2 {
   font-size: 4rem;
@@ -1270,7 +1305,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding-left: 3rem;
-  width: 30%;
+  width: 50%;
   font-size: 1.2rem;
 }
 
@@ -1308,7 +1343,15 @@ h1 {
   text-align: center;
   font-weight: 500;
   opacity: 0.8;
+  padding-bottom: 1rem;
 }
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+
 
 @media (min-width: 2201px) {
   * {
@@ -1613,6 +1656,8 @@ h1 {
   }
   .social-icons {
     margin-left: -2rem;
+    width: 70%;
+  
   }
   .Page1-buttons {
     display: flex;
@@ -1622,7 +1667,7 @@ h1 {
     gap: 1rem;
   }
   .Get-started {
-    margin-left: -3rem;
+    margin-left: 0rem;
   }
   .video-button {
     padding-inline-start: 0.5rem;
@@ -1676,6 +1721,10 @@ h1 {
     position: relative;
     height: fit-content;
   }
+  .des1{
+    width: 100%;
+    padding-inline: 1rem;
+  }
   .hero-banner-img {
     position: absolute;
     bottom: -17rem;
@@ -1700,7 +1749,12 @@ h1 {
     text-align: center;
   }
   .trainers-head h2 {
-    width: 50%;
+    width:100%;
+    
+  }
+  .trainers-head p {
+    width: 100%;
+    padding-inline: 1rem;
   }
   .page3 .trainers-box {
     display: flex;
@@ -1743,6 +1797,13 @@ h1 {
     text-align: center;
     margin: 1rem;
     padding: 0rem 0rem;
+  }
+  .mentor-container{
+    width: 100%;
+  }
+  .p-mentor{
+    width: 100%;
+    padding-inline: 1rem;
   }
 
   .page4-img-container img:nth-child(2){
@@ -1793,6 +1854,25 @@ h1 {
   }
   .page5-header-button {
     width: 80%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction:column;
+    padding-left: 3rem;
+    gap: 2rem;
+  }
+  .footer-logo{
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
   }
 
 }

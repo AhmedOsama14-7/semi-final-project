@@ -178,6 +178,7 @@ function CheckPlan (){
 
 }
 
+const plan3 = document.querySelector(".pricing-box-container3")
 const nextBtn2 = document.querySelector(".next2")
 const Plan2inputs = document.querySelectorAll(".inputs")
 const monthInput = document.querySelector(".month")
@@ -187,7 +188,8 @@ nextBtn2.addEventListener("click" , ()=>{
     checkMonthInput(monthInput); 
     CheckPlan();
    if(validation3 == true && validation4 == true && PlanValidation == true){
-       
+       plan2.classList.add("not-active")
+       plan3.classList.remove("not-active")
 }else if (validation3 == false){
        validationAlert.classList.remove("not-active-alert")
    } else if (validation4 == false){
@@ -203,3 +205,37 @@ nextBtn2.addEventListener("click" , ()=>{
      planPage.classList.remove("not-active")
     }
  )
+ 
+ const joinNowBtn = document.querySelectorAll(".join-button-fun")
+ const closeBtn3 = document.querySelector(".closeBtn3")
+ const closeBtn4 = document.querySelector(".closeBtn4")
+
+ function ClosePlan3 (btn){
+    plan3.classList.add("not-active")
+    // ("value" , "Subscribed")
+    joinNowBtn.forEach((btn)=>{
+        btn.setAttribute("value" , "Subscribed")
+    })
+
+ }
+ closeBtn3.addEventListener("click" , ClosePlan3)
+ closeBtn4.addEventListener("click" , ClosePlan3)
+ planBtn.forEach((btn) => {
+    btn.onclick = () => {
+        planPage.classList.remove("not-active-plan")
+        
+    };
+});
+
+ 
+ const videoBtn = document.querySelector(".video-button")
+ function vidalert(){
+     window.alert("no video added")
+    }
+    videoBtn.addEventListener("click" , vidalert)
+    
+    joinNowBtn.forEach((btn)=>{
+       btn.addEventListener("click" ,()=>{
+           planPage.classList.remove("not-active-plan")
+       } )
+    })

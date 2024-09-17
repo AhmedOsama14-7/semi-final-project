@@ -48,9 +48,8 @@
             </div>
 
             <div class="join-now-div">
-                <form action=" " > 
-                    <button class="join-button">Join Now</button>
-                </form>
+                <input type="button" value="Join Now" class="join-button join-button-fun" href="#pricing-box" ></button>
+            </ul>
             </div>
 
             <div class="dropdown-menu">
@@ -78,7 +77,7 @@
                             <a href="about.html">
                                 <li>About Us</li>
                             </a>
-                            <li><button class="drop-down-join-button">Join Now</button></li>
+                            <li><input type="button" value="Join Now" class="drop-down-join-button join-button-fun" href="#pricing-box" ></button></li>
                         </ul>
                     </div>
                 </div>
@@ -96,10 +95,10 @@
 
             
             <div class="Page1-buttons">
-                <form action="">
+
                     <button class="Get-started">Get Started</button>
                     <button class="video-button"> <img src="./resources/assets/images/play-circle.png" class="play-circle" alt="play-circle"><P>Play video</P></button>
-                </form>
+        
             </div>
             <div class="social-icons">
                 <a href=""><img src="./resources/assets/images/facebook-02face.png" alt="facebook icon"></a>
@@ -322,7 +321,7 @@
                     <div class="body">
                         <div class="inputs">
                             <input type="text"  placeholder="Enter name" class="upper-inputs" name="" id="name">
-                            <input type="text"  placeholder="Enter phone number" class="upper-inputs" name="" id="phone">
+                            <input type="text" inputmode="numeric" placeholder="Enter phone number" class="upper-inputs" name="" id="phone">
                             <input type="email" placeholder="Enter email" class="upper-inputs" name="" id="email">
                         </div>
                         <div class="img-holder">
@@ -338,9 +337,9 @@
                         <div class="upper-footer">
                         <input type="button" class="gender footer-inputs" value="Select Gender">
                         
-                        <input type="text" placeholder="Enter Age" class="footer-inputs bottom-inputs">
-                        <input type="text" placeholder="Enter height" class="footer-inputs  bottom-inputs">
-                        <input type="text"  placeholder="Enter wight" class="footer-inputs  bottom-inputs">
+                        <input type="text" inputmode="numeric" placeholder="Enter Age" class="footer-inputs bottom-inputs">
+                        <input type="text" inputmode="numeric" placeholder="Enter height" class="footer-inputs  bottom-inputs">
+                        <input type="text" inputmode="numeric" placeholder="Enter wight" class="footer-inputs  bottom-inputs">
                         </div>
                         <div class="gender-box">
                             <input type="button" class="male genderBtn"  value="Male">
@@ -413,11 +412,11 @@
                             <input type="button"   value="Expert Plan" class="planChoice" name="" id="plan">
                         </div>
                         <div class="row3 row">
-                            <input type="text" placeholder="Plan Duaration" class="inputs" >
-                            <input type="text" placeholder="End Date"class="inputs">
-                            <input type="text" placeholder="Start Date" class="inputs">
+                            <input type="text" inputmode="numeric" placeholder="Plan Duaration (monthes)" class="inputs" >
+                            <input type="text" inputmode="numeric" placeholder="End month"class="inputs">
+                            <input type="text" inputmode="numeric" placeholder="Start month" class="inputs">
                         </div>
-                        <div class="row-alert row"><h3 class="not-active-alert">Note : Every Goal Cost 3000EGP</h3></div>
+
                         <div class="row4 row">
                             <input type="button" class="goalBtn"value="goal1">
                             <input type="button" class="goalBtn"value="goal2">
@@ -443,7 +442,25 @@
                 </div>
             </div>
         </div>
-        
+        <div class="pricing-box-container pricing-box-container3 not-active" >
+            <div class="pricing-box pricing-box3"  >
+                <div class="pricing-box-head">
+                    <div class="joinUs">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3>Join Us Now!</h3>
+                    </div>
+                    <div>
+                        <button class="close"><i class="fa-solid fa-xmark closeBtn3"></i></button>
+                    </div>
+                </div>
+                <div class="body3">
+                    <div class="head"><h3>Thanks</h3></div>
+                <div class="closebtn-div">
+                    <input type="button" class="closeBtn4" value="Return to Home">
+                </div>
+                </div>
+                
+                   
         
     </div>
         </section>
@@ -514,6 +531,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, tempore? Repellat, atque. Unde assumenda quisquam voluptas accusantium quod at autem.
                 </p>
             </div>
+            <div class="footer-bottom">
             <div class="footer-menu">
                 <ul>
                     <h3>Menu</h3>
@@ -552,7 +570,7 @@
                 </ul>
         
             </div>
-            
+        </div>
             </div>
             <div class="copy-right">hamodaoss209@gmail.com</div>
         </footer>
