@@ -123,7 +123,7 @@ plansBtns.forEach((btn)=>{
 }) 
 })
 const goalAlert = document.querySelector(".row-alert h3")
-console.log(goalAlert);
+
 const chosenGoals = []
 const goalBtn = document.querySelectorAll(".goalBtn")
     goalBtn.forEach((btn) => {
@@ -228,14 +228,73 @@ nextBtn2.addEventListener("click" , ()=>{
 });
 
  
- const videoBtn = document.querySelector(".video-button")
- function vidalert(){
-     window.alert("no video added")
+ 
+
+
+const monthBtn = document.querySelector(".monthly")
+const yearBtn = document.querySelector(".yearly")
+const price = document.querySelector(".price")
+const price2 = document.querySelector(".price2")
+const price3 = document.querySelector(".price3")
+const yearPriceArr = ["60$" , "180$" , "240$"]
+    console.log(price)
+
+
+    function yearPrice (){
+            monthBtn.classList.add("not-active-planBtn")
+            yearBtn.classList.remove("not-active-planBtn")
+           price.innerHTML = `
+                    <span>60$</span> / yearly               
+                `
+           price2.innerHTML = `
+                    <span>180$</span> / yearly               
+                `
+           price3.innerHTML = `
+                    <span>240$</span> / yearly               
+                `
+            
     }
-    videoBtn.addEventListener("click" , vidalert)
-    
-    joinNowBtn.forEach((btn)=>{
-       btn.addEventListener("click" ,()=>{
-           planPage.classList.remove("not-active-plan")
-       } )
-    })
+    function monthPrice (){
+            monthBtn.classList.remove("not-active-planBtn")
+            yearBtn.classList.add("not-active-planBtn")
+           price.innerHTML = `
+                    <span>05$</span> / monthly               
+                `
+           price2.innerHTML = `
+                    <span>15$</span> / monthly               
+                `
+           price3.innerHTML = `
+                    <span>20$</span> / monthly               
+                `
+            
+    }
+
+    yearBtn.addEventListener("click" , yearPrice)
+    monthBtn.addEventListener("click" , monthPrice)
+
+ 
+
+    // const swiper = new Swiper('.swiper', {
+
+    //     speed: 400,
+    //     spaceBetween: 100,
+    //     slidesPerView: 1.2,
+    //     allowTouchMove : true
+    //   });
+    const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView:1.5,
+        loop:true,
+        followFinger:true,
+        navigation: {
+            nextEl: '.nextbtn',
+            prevEl: '.prev',
+          },
+                
+      });
+
+      const reviewBtn = document.querySelector(".review-header-button")
+      function AddReview(){
+        
+      }

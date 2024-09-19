@@ -12,6 +12,10 @@
     <link rel="icon" href="./assets/images/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Fit Hub</title>
 </head>
 <body>
@@ -94,12 +98,6 @@
                 <p class="des1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus eos blanditiis a praesentium qui sequi perspiciatis, eum quod, magni pariatur aspernatur est quis modi. Est nemo omnis dolores saepe sapiente error consequatur quibusdam illum?</p>
 
             
-            <div class="Page1-buttons">
-
-                    <button class="Get-started">Get Started</button>
-                    <button class="video-button"> <img src="./resources/assets/images/play-circle.png" class="play-circle" alt="play-circle"><P>Play video</P></button>
-        
-            </div>
             <div class="social-icons">
                 <a href=""><img src="./resources/assets/images/facebook-02face.png" alt="facebook icon"></a>
                 <a href=""><img src="./resources/assets/images/instagraminsta.png" alt="instgram icon"></a>
@@ -224,15 +222,15 @@
             </div>
             <div class="page5-header-button">
                 <button class="monthly">monthly</button>
-                <button>yearly</button>
+                <button class="yearly not-active-planBtn">yearly</button>
             </div>
             </div>
 
             <div class="prices-container">
                 <div class="prices-box">
-                    <div class="prices-box-header">
+                    <div class="prices-box-header prices-box-header1">
                         <h4>beginner plan</h4>
-                        <h3><span>$05</span> / month</h3>
+                        <h3 class="price"><span>05</span> / month</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas corrupti asperiores optio nemo quas laborum minima odio omnis dolor?</p>
                     </div>
                     <div class="prices-box-list">
@@ -248,7 +246,7 @@
                 <div class="prices-box">
                     <div class="prices-box-header">
                         <h4>premium plan</h4>
-                        <h3><span>$15</span> / month</h3>
+                        <h3 class="price2"><span>15</span> / month</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas corrupti asperiores optio nemo quas laborum minima odio omnis dolor?</p>
                     </div>
                     <div class="prices-box-list">
@@ -264,7 +262,7 @@
                 <div class="prices-box">
                     <div class="prices-box-header">
                         <h4>expert plan</h4>
-                        <h3><span>$20</span> / month</h3>
+                        <h3 class="price3"><span>20</span> / month</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas corrupti asperiores optio nemo quas laborum minima odio omnis dolor?</p>
                     </div>
                     <div class="prices-box-list">
@@ -280,7 +278,7 @@
             </div>
         </div>
 <div class="pricing-box-container" >
-        <div class="pricing-box not-active-plan"  >
+        <div id="pricing-box"class="pricing-box not-active-plan"  >
             <div class="pricing-box-head">
                 <div class="joinUs">
                     <i class="fa-solid fa-dumbbell"></i>
@@ -473,46 +471,163 @@
                 </div>
                 <div class="review-header-button"><button> + give review</button></div>
             </div>
+
             <div class="review-body">
                 <div class="review-img">
                     <img src="./resources/assets/images/Group 51.png">
                 </div>
-                <div class="review-container">
-                <div class="review-box-container">
+            
 
-                    <div class="review-box">
-                        <div class="box-header">
-                            <h2>Name</h2>
-                            <img src="./resources/assets/images/logo.png" alt="">
-                        </div>
-                        <div class="box-stars">
-                            <img src="./resources/assets/images/Frame 239.png">
-                        </div>
-                        <div class="box-para">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
-                        </div>
-                    </div>
-                    <div class="review-box">
-                        <div class="box-header">
-                            <h2>Name</h2>
-                            <img src="./resources/assets/images/logo.png" alt="">
-                        </div>
-                        <div class="box-stars">
-                            <img src="./resources/assets/images/Frame 240.png">
-                        </div>
-                        <div class="box-para">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="review-slider-button">
-                        <button> < </button>
-                        <button> > </button>
-                     </div>
-                    </div>
-                </div>
+
+        <!-- Slider main container -->
+<div class="swiper review-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper review-box-container">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
             </div>
         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>Name</h2>
+                <img src="./resources/assets/images/logo.png" alt="">
+            </div>
+            <div class="box-stars">
+                <img src="./resources/assets/images/Frame 239.png">
+            </div>
+            <div class="box-para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam quisquam voluptatem corrupti vitae laudantium assumenda dolor excepturi iure aliquam?</p>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <!-- If we need pagination -->
+    
+  
+    <!-- If we need navigation buttons -->
+    <div class="review-slider-button">
+       
+        <div class="review-slider-button">
+            <button class="prev" > < </button>
+            <button  class="nextbtn"> >  </button>
+         </div>
+       
+     </div>
+  
+    
+</div>
+  </div>
         </section>
 
         <section class="page7"  data-aos="fade-up" data-aos-duration="1000">
@@ -524,6 +639,7 @@
             </div>
             </div>
         </section>
+    </main>
         <footer>
             <div class="footer">
             <div class="footer-logo">
@@ -574,7 +690,8 @@
             </div>
             <div class="copy-right">hamodaoss209@gmail.com</div>
         </footer>
-    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./resources/scripts/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
