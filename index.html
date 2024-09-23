@@ -99,10 +99,10 @@
 
             
             <div class="social-icons">
-                <a href=""><img src="./resources/assets/images/facebook-02face.png" alt="facebook icon"></a>
-                <a href=""><img src="./resources/assets/images/instagraminsta.png" alt="instgram icon"></a>
-                <a href=""><img src="./resources/assets/images/linkedin-02.png" alt="likedIn icon"></a>
-                <a href=""><img src="./resources/assets/images/github.png" alt="GitHub icon"></a>           
+                <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>           
             </div>
         
         </div>
@@ -278,7 +278,7 @@
             </div>
         </div>
 <div class="pricing-box-container" >
-        <div id="pricing-box"class="pricing-box not-active-plan"  >
+        <div id="pricing-box"class="pricing-box not-active-plan">
             <div class="pricing-box-head">
                 <div class="joinUs">
                     <i class="fa-solid fa-dumbbell"></i>
@@ -469,9 +469,35 @@
                     <h4>give review</h4>
                     <h2>From you</h2>
                 </div>
-                <div class="review-header-button"><button> + give review</button></div>
+                <div class="review-header-button"><button href="#review-box"> + give review</button></div>
             </div>
-
+            <div id="review-box" class="AddReviewBoxContainer not-active-review">
+                <div class="AddReviewBox">
+                    <div class="header">
+                        <div class="joinUs">
+                            <i class="fa-solid fa-heart"></i>
+                            <h3>Add Review</h3>
+                        </div>
+                        <button class="close"><i class="fa-solid fa-xmark reviewCloseBtn"></i></button>
+                    </div>
+                    <div class="body">
+                        <input type="text" class="Review-name" placeholder="Enter Your Name">
+                        <div class="stars">
+                            <i class="fa-solid fa-star star1"></i>
+                            <i class="fa-solid fa-star star2"></i>
+                            <i class="fa-solid fa-star star3"></i>
+                            <i class="fa-solid fa-star star4"></i>
+                            <i class="fa-solid fa-star star5"></i>
+                            
+                        </div>
+                            <textarea name="" placeholder="Enter Your Review" id="textarea"></textarea>
+                        
+                    </div>
+                    <div class="footer-review">
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
             <div class="review-body">
                 <div class="review-img">
                     <img src="./resources/assets/images/Group 51.png">
@@ -691,11 +717,11 @@
             <div class="copy-right">hamodaoss209@gmail.com</div>
         </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./resources/scripts/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+         </script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./resources/scripts/index.js"></script>
 </body>
 </html>

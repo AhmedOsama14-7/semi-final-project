@@ -1,3 +1,5 @@
+
+
 const menu_bar_icon = document.querySelector("i")
 const menu_bar = document.querySelector(".dropdown-menu-clicked")
 
@@ -272,29 +274,280 @@ const yearPriceArr = ["60$" , "180$" , "240$"]
     yearBtn.addEventListener("click" , yearPrice)
     monthBtn.addEventListener("click" , monthPrice)
 
- 
-
-    // const swiper = new Swiper('.swiper', {
-
-    //     speed: 400,
-    //     spaceBetween: 100,
-    //     slidesPerView: 1.2,
-    //     allowTouchMove : true
-    //   });
-    const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 10,
-        slidesPerView:1.5,
-        loop:true,
-        followFinger:true,
-        navigation: {
-            nextEl: '.nextbtn',
-            prevEl: '.prev',
-          },
-                
-      });
-
       const reviewBtn = document.querySelector(".review-header-button")
-      function AddReview(){
+      const reviewCloseBtn = document.querySelector(".reviewCloseBtn")
+      const reviewBox = document.querySelector(".AddReviewBoxContainer")
+      const ReviewName = document.querySelector(".Review-name")
+      const ReviewPara = document.querySelector("#textarea")
+      const sendReview = document.querySelector(".footer-review button")
+
+      const star1 = document.querySelector(".star1")
+      const star2 = document.querySelector(".star2")
+      const star3 = document.querySelector(".star3")
+      const star4 = document.querySelector(".star4")
+      const star5 = document.querySelector(".star5")
+
+      reviewBtn.addEventListener("click" , ()=>{
+        reviewBox.classList.remove("not-active-review")
+      })
+      reviewCloseBtn.addEventListener("click" , ()=>{
+        reviewBox.classList.add("not-active-review")
+      })
+
+      let starsArr = []
+      function pushStars (star1 , star2 , star3,star4 ,star5){
+        starsArr.push(star1 , star2 , star3 ,star4 , star5)
+    }
+    pushStars(star1,star2,star3,star4,star5)
+    console.log(starsArr);
+    let starCounter = 0;
+    starsArr.forEach((star) => {
+        star.addEventListener("click" , ()=>{
+            starCounter = starsArr.indexOf(star) + 1
+            console.log(starCounter);
+        })
+    })
+    let nameValidation
+    function nameValid (){
+        if(ReviewName.value != ""){
+            nameValidation = true
+        } else{
+            nameValidation = false
+        }
+    }
+
+    let paraValidation;
+    function reviewValid(){
+        if(ReviewPara.value != ""){
+           paraValidation = true
+        } else{
+            paraValidation = false
+        }
+    }
+    const reviewsContainer = document.querySelector(".review-box-container")
+    function pushReview (){
+        nameValid()
+        reviewValid()
+        if(nameValidation == true && paraValidation == true && starCounter != 0){
+            starCounter = 0;
+            ReviewName.nodeValue == ""
+            ReviewPara.nodeValue == ""
+            reviewBox.classList.add("not-active-review")
+            let temp = `<div class="swiper-slide">
+            <div class="review-box ">
+                <div class="box-header">
+                    <h2>${ReviewName.value}</h2>
+                    <img src="./resources/assets/images/logo.png" alt="">
+                </div>
+                <div class="box-stars">
+                    <img src="./resources/assets/images/Frame 239.png">
+                </div>
+                <div class="box-para">
+                    <p>${ReviewPara.value}</p>
+                </div>
+            </div>
+          </div>`
+          reviewsContainer.innerHTML += temp
+
+        } else if (nameValidation == false || paraValidation == false || starCounter == 0) {
+            console.log("no");
+        }
+
         
-      }
+    }
+
+    sendReview.addEventListener("click" , pushReview);
+
+    async function fetchRevApi(){
+        const revRequest = await fetch("http://localhost:3000/reviews" , {
+            method: "GET"
+        })
+        const revFinalRequest = await revRequest.json()
+        console.log(revFinalRequest);
+        revRequestHTML(revFinalRequest)
+        
+    }
+
+
+
+    fetchRevApi()
+
+    // function ApiStars (starsApi){
+    //     let starsImg = ""
+    //         if(starsApi == 5){
+    //             starsImg = `
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+    //             <i class="fa-solid fa-star star4"></i>
+    //             <i class="fa-solid fa-star star5"></i>
+    //             `
+    //         } else if (starsApi == 4){
+    //             starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+    //             <i class="fa-solid fa-star star4"></i>
+              
+    //             `
+    //         } else if(starsApi == 3){
+    //             starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+               
+    //             `
+    //         } else if(starsApi == 2){
+    //             starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+            
+    //             `
+    //         } else if(starsApi == 1){
+    //             starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+                          
+    //             `
+    //             console.log(starsImg);
+    //         }
+            
+    //              }    
+          
+   
+    
+    // function ApiStars (starsApi){
+        
+    //     let starsImg = ``
+        
+        
+    //         if(starsApi == 5){
+    //             return starsImg = `
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+    //             <i class="fa-solid fa-star star4"></i>
+    //             <i class="fa-solid fa-star star5"></i>
+    //             `
+    //         } else if (starsApi == 4){
+    //             return starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+    //             <i class="fa-solid fa-star star4"></i>
+              
+    //             `
+    //         } else if(starsApi == 3){
+    //            return starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+    //             <i class="fa-solid fa-star star3"></i>
+               
+    //             `
+    //         } else if(starsApi == 2){
+    //            return starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+    //             <i class="fa-solid fa-star star2"></i>
+            
+    //             `
+    //         } else if(starsApi == 1){
+    //          return starsImg =`
+    //             <i class="fa-solid fa-star star1"></i>
+                          
+    //             `
+    //         }
+        
+            
+    //         return console.log(starsImg);
+            
+    //              }  
+                 
+                 
+
+
+    function revRequestHTML (data){
+        // let starsImg = ``
+    
+    
+        // if(api.stars == 5){
+        //     return starsImg = `
+        //     <i class="fa-solid fa-star star1"></i>
+        //     <i class="fa-solid fa-star star2"></i>
+        //     <i class="fa-solid fa-star star3"></i>
+        //     <i class="fa-solid fa-star star4"></i>
+        //     <i class="fa-solid fa-star star5"></i>
+        //     `
+        // } else if (api.stars == 4){
+        //     return starsImg =`
+        //     <i class="fa-solid fa-star star1"></i>
+        //     <i class="fa-solid fa-star star2"></i>
+        //     <i class="fa-solid fa-star star3"></i>
+        //     <i class="fa-solid fa-star star4"></i>
+          
+        //     `
+        // } else if(api.stars == 3){
+        //    return starsImg =`
+        //     <i class="fa-solid fa-star star1"></i>
+        //     <i class="fa-solid fa-star star2"></i>
+        //     <i class="fa-solid fa-star star3"></i>
+           
+        //     `
+        // } else if(api.stars == 2){
+        //    return starsImg =`
+        //     <i class="fa-solid fa-star star1"></i>
+        //     <i class="fa-solid fa-star star2"></i>
+        
+        //     `
+        // } else if(api.stars == 1){
+        //  return starsImg =`
+        //     <i class="fa-solid fa-star star1"></i>
+                      
+        //     `
+        // }
+    let revTemp = ``
+    data.forEach((api)=> {
+        
+    revTemp +=`
+    <div class="swiper-slide">
+        <div class="review-box ">
+            <div class="box-header">
+                <h2>${api.name}</h2>
+                
+            </div>
+            <div class="box-stars">
+               ${new Array (api.stars).map(()=>{
+               return <i class="fa-solid fa-star star1"></i>
+            })}
+            
+            
+            
+            </div>
+            <div class="box-para">
+            <p>${api.rev}</p>
+            </div>
+            </div>
+            </div>
+            `
+        })
+        console.log(new Array(5));
+    document.querySelector(".swiper-wrapper").innerHTML = revTemp
+    }
+    // window.addEventListener("DOMContentLoaded" ,()=>{
+    //     var swiper = new swiper('.swiper', {
+    //         speed: 400,
+    //         spaceBetween: 10,
+    //         slidesPerView: 1.5,
+    //         loop: true,
+    //         followFinger: true,
+    //         navigation: {
+    //             nextEl: '.nextbtn',
+    //             prevEl: '.prev',
+    //         },
+    //     })
+        
+    // })
+
+
+   
+
+
+      

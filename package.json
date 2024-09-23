@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "new"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+
+
+,
+  "reviews": [
+    { "name": "john", "rev": "Interisting Website", "stars": 5 },
+    { "name": "ahmed", "rev": "Very usefull for body builders", "stars": 4 },
+    { "name": "mohamed", "rev": "Good but need more maintenance", "stars": 3 },
+    { "name": "ali", "rev": "Lovely website and very usefull", "stars": 4 },
+    { "name": "malak", "rev": "good even for girls", "stars":4  },
+    { "name": "osama", "rev": "can not imagine my life without Fit Hub", "stars": 5 }
+    
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -229,15 +229,17 @@ h1 {
   justify-content: center;
   
 }
-.social-icons a img {
-  width: 90%;
-  height: 90%;
-}
 
-.social-icons a:hover {
+
+.social-icons a:hover  {
   
-  background-color: #9e9d9d;
+  background-color: rgb(242, 245, 252);
   border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 /* end left area */
@@ -1236,6 +1238,118 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+.AddReviewBoxContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  margin-top: 3rem;
+}
+.not-active-review{
+  display: none;
+}
+.AddReviewBox{
+  border: 1px solid #1a1a1a;
+  border-radius: 1rem;
+  width: 30rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+ padding: 1rem;
+ gap: 1rem;
+ padding-bottom: 2rem;
+}
+.AddReviewBox .header{
+  display: flex;
+ justify-content: space-between;
+ border-bottom: 1px solid #1a1a1a;
+ padding-bottom: 1rem;
+ align-items: center;
+ 
+}
+.AddReviewBox .body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.AddReviewBox .body input{
+  width:90%;
+  height: 3rem;
+  padding-inline-start: 1rem;
+  padding-block: 1rem;
+  background-color: rgb(242, 245, 252);
+  border-radius: 1rem;
+  border: rgb(242, 245, 252) solid 1px;
+  outline: 1px;
+}
+.AddReviewBox .body #textarea{
+  width: 90%;
+  height: 10rem;
+  padding-inline-start: 1rem;
+  padding-block: 1rem;
+  background-color: rgb(242, 245, 252);
+  border-radius: 1rem;
+  border: rgb(242, 245, 252) solid 1px;
+  outline: 1px;
+  align-items: flex-start;
+  resize: none;
+}
+.footer{
+  width: 100%;
+}
+.AddReviewBox .footer-review button{
+  width: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  padding-block: 1rem;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.stars{
+  display: flex;
+  gap: 1rem;
+  width: 60%;
+  justify-content: space-between;
+}
+.stars i{
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stars i:hover{
+  background-color: rgb(242, 245, 252) ;
+  border-radius: 50%;
+}
+.reviewCloseBtn{
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.reviewCloseBtn:hover{
+  background-color: rgb(242, 245, 252) ;
+  border-radius: 50%;
+}
+.fa-xmark:hover{
+  background-color: rgb(242, 245, 252) ;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .review-box .box-header img {
   width: 45px;
   height: 20px;
@@ -1335,7 +1449,7 @@ h1 {
 }
 
 .footer-logo p {
-  opacity: 0.6;
+  opacity: 0.6; 
   font-size: 1.2rem;
 }
 .footer-logo img {
@@ -1721,6 +1835,7 @@ h1 {
   }
   .starting-page {
     padding-left: 0rem;
+    padding-top: 5rem;
   }
   .right-section {
     left: 15%;
@@ -1791,6 +1906,9 @@ h1 {
     text-align: center;
     width: 70%;
   }
+  .mentor-container{
+    margin-left: 0rem;
+  }
   .page5 {
     display: flex;
     flex-direction: column;
@@ -1834,7 +1952,7 @@ h1 {
     width: 100%;
   }
   .page5-header-button button:nth-child(1) {
-    padding-inline-end: 10rem;
+    
   }
 
   .page5 .prices-box {
@@ -1894,7 +2012,9 @@ h1 {
     justify-content: space-between;
     gap: 2rem;
   }
-
+  .AddReviewBox{
+    width: 25rem;
+  }
 }
 
 @media (max-width:375px) {
