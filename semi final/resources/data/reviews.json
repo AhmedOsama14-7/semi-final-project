@@ -1,0 +1,10 @@
+{
+    "reviews": [
+        { "name": "john", "rev": "Interisting Website", "stars": 5 },
+        { "name": "ahmed", "rev": "Very usefull for body builders", "stars": 4 },
+        { "name": "mohamed", "rev": "Good but need more maintenance", "stars": 3 },
+        { "name": "ali", "rev": "Lovely website and very usefull", "stars": 4 },
+        { "name": "malak", "rev": "good even for girls", "stars": 4 },
+        { "name": "osama", "rev": "can not imagine my life without Fit Hub", "stars": 5 }
+    ]
+}
